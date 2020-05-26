@@ -31,13 +31,11 @@ func main() {
 			req, err := http.NewRequest("GET", rawURL, nil)
 			req.Header.Set("X-Forwarded-Host", forwarded)
 			if err != nil {
-				fmt.Fprintf(os.Stderr, "failed to create request: %s\n", err)
 				return
 			}
 
 			resp, err := client.Do(req)
 			if err != nil {
-				fmt.Fprintf(os.Stderr, "request failed: %s\n", err)
 				return
 			}
 			defer resp.Body.Close()
