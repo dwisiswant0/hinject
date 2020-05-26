@@ -19,7 +19,7 @@ func main() {
 	client := newClient()
 	var wg sync.WaitGroup
 	sc := bufio.NewScanner(os.Stdin)
-	var forwarded = "nobody.dw1.io"
+	var forwarded = "0a6d8cfc90fb8ef81240cd1f127409098dd846e1.local"
 
 	for sc.Scan() {
 		rawURL := sc.Text()
