@@ -12,5 +12,5 @@ Host Header Injection Vulnerability Checker
 ```
 or
 ```
-▶ cat urls.txt | hinject
+▶ cat urls.txt | hinject -v
 ```
